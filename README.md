@@ -9,5 +9,6 @@
 **Photo**:![Placeholder photo](http://www.utexas.edu/sites/www.utexas.edu/files/styles/utexas_hero_photo_image/public/tower_hero_v2.jpg)
 
 
-**[homework](https://github.com/NickBoeker/ECL2017S/tree/master/Homework)**: This directory contains all my homework submissions
-**[quiz](https://github.com/NickBoeker/ECL2017S/tree/master/Quiz)**: This directory contains all my quiz submissions
+**[homework](https://github.com/NickBoeker/ECL2017S/tree/master/Homework)**: This directory contains all my homework submissions  
+**[quiz](https://github.com/NickBoeker/ECL2017S/tree/master/Quiz)**: This directory contains all my quiz submissions  
+**[exam](https://github.com/NickBoeker/ECL2017S/tree/master/Exam)**: This directory contains all my exam submissions  
