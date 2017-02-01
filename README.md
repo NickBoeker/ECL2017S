@@ -11,6 +11,7 @@
 ![Placeholder photo](http://www.utexas.edu/sites/www.utexas.edu/files/styles/utexas_hero_photo_image/public/tower_hero_v2.jpg)
 
 #### Description of the project's content
+This repository contains my homework, quizzes, and virtually every effort that I have made for [ECL2017S](http://www.shahmoradi.org/ECL2017S/). The structure of the project is the following:  
 
 * **[homework](https://github.com/NickBoeker/ECL2017S/tree/master/Homework)**: This directory contains all my homework submissions  
 * **[quiz](https://github.com/NickBoeker/ECL2017S/tree/master/Quiz)**: This directory contains all my quiz submissions  
