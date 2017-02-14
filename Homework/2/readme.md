@@ -2,10 +2,10 @@ Nick Boeker
 
 A -  
 
-'''shell  
+```bash  
 $ git branch test1 master  
 $ git branch test2 master  
-'''  
+```  
 B -  
 '''bash  
 $ git checkout test1  
