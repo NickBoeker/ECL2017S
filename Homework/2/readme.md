@@ -166,4 +166,18 @@ Switched to branch 'master'
 Your branch is ahead of 'origin/master' by 5 commits.  
   (use "git push" to publish your local commits)  
 $ git branch -d test2  
+Deleted branch test2 (was 7a65888).  
+$ git branch  
+* master  
+'''
+T -  
+'''bash
+$ git add -A  
+$ git commit  
+On branch master  
+Your branch is ahead of 'origin/master' by 7 commits.  
+  (use "git push" to publish your local commits)  
+nothing to commit, working directory clean  
+$ git push  
+'''
 
