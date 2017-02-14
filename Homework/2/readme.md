@@ -2,7 +2,7 @@ Nick Boeker
 
 A -  
 
-'''bash  
+'''shell  
 $ git branch test1 master  
 $ git branch test2 master  
 '''  
