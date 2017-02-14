@@ -155,7 +155,15 @@ I would assume it was due to the fact that test1 was succesfully merged into mas
 R -  
 '''bash
 $ git checkout test2  
-
+Switched to branch 'test2'  
+$ git branch -d test2  
+error: Cannot delete the branch 'test2' which you are currently on.  
+'''
+S -  
+'''bash
+$ git checkout master  
+Switched to branch 'master'  
+Your branch is ahead of 'origin/master' by 5 commits.  
+  (use "git push" to publish your local commits)  
 $ git branch -d test2  
 
-'''
