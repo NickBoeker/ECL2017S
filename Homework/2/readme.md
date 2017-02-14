@@ -73,3 +73,39 @@ readme.md  test.txt
 The test.txt file has appeared in master since we merged the changes.  
 J -  
 '''bash
+$ git merge test2  
+Auto-merging Homework/2/test.txt  
+CONFLICT (add/add): Merge conflict in Homework/2/test.txt  
+Auto-merging Homework/2/readme.md  
+CONFLICT (content): Merge conflict in Homework/2/readme.md  
+Automatic merge failed; fix conflicts and then commit the result.  
+'''
+The error appears because the two branches have files by the same names with different contents.  
+K -  
+'''bash
+$ git checkout test2
+Homework/2/readme.md: needs merge
+Homework/2/test.txt: needs merge
+error: you need to resolve your current index first
+'''
+L -  
+'''bash
+$ git status  
+On branch master  
+Your branch is ahead of 'origin/master' by 2 commits.  
+  (use "git push" to publish your local commits)  
+You have unmerged paths.  
+  (fix conflicts and run "git commit")  
+
+Unmerged paths:  
+  (use "git add <file>..." to mark resolution)  
+
+	both modified:   readme.md  
+	both added:      test.txt  
+
+no changes added to commit (use "git add" and/or "git commit -a")  
+'''
+Because as stated above there are files with the same name and differing contents.  
+M -  
+'''bash
+
