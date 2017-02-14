@@ -108,4 +108,54 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Because as stated above there are files with the same name and differing contents.  
 M -  
 '''bash
+$ gedit test.txt
+'''
+N -  
+'''bash
+$ git status  
+On branch master  
+Your branch is ahead of 'origin/master' by 2 commits.  
+  (use "git push" to publish your local commits)  
+You have unmerged paths.  
+  (fix conflicts and run "git commit")  
 
+Unmerged paths:  
+  (use "git add <file>..." to mark resolution)  
+
+	both modified:   readme.md  
+	both added:      test.txt  
+
+no changes added to commit (use "git add" and/or "git commit -a")  
+$ git add -A  
+$ git commit -m "Fixed merge errors in test.txt"  
+[master 64d55ad] Fixed merge errors in test.txt  
+$ git checkout test2
+Switched to branch 'test2'
+'''
+O -  
+'''bash
+$ git branch -d test1  
+error: The branch 'test1' is not fully merged.  
+If you are sure you want to delete it, run 'git branch -D test1'.  
+'''
+P -  
+'''bash
+$ git checkout master  
+Switched to branch 'master'  
+Your branch is ahead of 'origin/master' by 4 commits.  
+  (use "git push" to publish your local commits)  
+$ git branch -d test1  
+Deleted branch test1 (was 2d6f106).  
+$ git branch  
+* master  
+  test2  
+'''
+Q -  
+I would assume it was due to the fact that test1 was succesfully merged into master but not into test2.  
+R -  
+'''bash
+$ git checkout test2  
+
+$ git branch -d test2  
+
+'''
