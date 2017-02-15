@@ -180,3 +180,5 @@ Your branch is ahead of 'origin/master' by 7 commits.
 nothing to commit, working directory clean  
 $ git push  
 ```
+2 -  
+![Proof of changing to gh-pages](../../Resources/img/pages.png)
