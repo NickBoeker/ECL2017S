@@ -2,20 +2,17 @@
 
 def fib(n):
     if n == 'stop':
-        res = -1
-        return res
-    try:
-        n = int(n)
-    except ValueError:
+        res = 'why pls'
+        #break
+    elif n.isdigit() and n.find('.') ==-1:
+        res = fibSeq(int(n))
+        print('Fib({})={}'.format(n,res))
+        n = input('Please enter another non-negative integer or stop: ')
+        fib(n)
+    else:
         print('The input argument {} is not a non-negative integer'.format(n))
-        res = -2
-        return res
-    if int(n) < 0:
-        print('The input argument {} is not a non-negative integer'.format(n))
-        res = -2
-        return res
-    res = fibSeq(int(n))
-    return res
+        n=input('Please enter non-negative integer or stop: ')
+        fib(n)
 
 def fibSeq(n):
     if n == 0:
@@ -26,13 +23,5 @@ def fibSeq(n):
         res = fibSeq(n-1)+fibSeq(n-2)
     return res
 
-i = 1
-while i == 1:
-    n = input('Please enter a non-negative integer or stop: ')
-    res = fib(n)
-    if res == -2:
-        continue
-    elif res == -1:
-        break
-    else:
-        print('Fib({}) = {}'.format(n,res))
+n = input('Please enter a non-negative integer or stop: ')
+fib(n)
