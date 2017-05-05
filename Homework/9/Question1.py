@@ -35,6 +35,8 @@ def plotter(inPath,figFile):
 	ax = plt.gca()  # generate a plot handle
 	ax.set_xlabel('Fluence [ ergs/cm^2 ]') # set X axis title
 	ax.set_ylabel('Epeak [ keV ]')  # set Y axis title
+	ax.set_yscale('log')
+	ax.set_xscale('log')
 	ax.axis([1.0e-8, 1.0e-1, 1.0, 1.0e4]) # set axix limits [xmin, xmax, ymin, ymax]
 	counter = 0     # counts the number of events
 	
@@ -51,7 +53,7 @@ def plotter(inPath,figFile):
 
 link = "http://butler.lab.asu.edu/swift/bat_time_table.html"
 outputPath = "q1output/"
-fetchHTMLTable(link,outputPath)
-fileRetriever(outputPath)
+#fetchHTMLTable(link,outputPath)
+#fileRetriever(outputPath)
 plotter(outputPath,'fig.png')
 print("Program Complete")
