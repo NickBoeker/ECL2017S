@@ -53,7 +53,7 @@ def plotter(inPath,figFile):
 
 link = "http://butler.lab.asu.edu/swift/bat_time_table.html"
 outputPath = "q1output/"
-#fetchHTMLTable(link,outputPath)
-#fileRetriever(outputPath)
+fetchHTMLTable(link,outputPath)
+fileRetriever(outputPath)
 plotter(outputPath,'fig.png')
 print("Program Complete")
